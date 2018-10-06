@@ -1,0 +1,22 @@
+.site-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 3px solid seagreen;
+}
+
+.main {
+  margin: 0 auto;
+  border: 3px solid skyblue;
+}
+
+.header,
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  border: 3px solid skyblue;
+}
+
