@@ -1,25 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .site-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   max-width: 1024px;
+  min-width: 300px;
   margin: 0 auto;
   border: 3px solid seagreen;
+  background: #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main {
   width: 100%;
   margin: 0 auto;
-  border: 3px solid skyblue;
+  border: 3px dotted red;
 }
 
 .header,
 .footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
+  border: 3px dotted red;
+}
+
+.header__person-name {
   border: 3px solid skyblue;
 }
 
+.header__title {
+  border: 3px solid skyblue;
+}
 
+.nav {
+  border: 3px solid skyblue;
+}
+
+.nav__link {
+  border: 3px solid skyblue;
+}
+
+/*=====================================*/
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid skyblue;
+}
+
+.about-me__title {
+  border: 3px solid skyblue;
+}
+
+.about-me__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  border: 3px solid skyblue;
+}
+
+@media (max-width: 600px) {
+  .about-me__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid skyblue;
+  }
+}
+
+.about-me__person-photo {
+  margin: 5px;
+  border: 3px solid skyblue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-me__summary {
+  padding: 5px 5px 5px 20px;
+  border: 3px solid skyblue;
+}
+
+/*======================================*/
+
+/*======================================*/
+
+/*======================================*/
+
+/*======================================*/
+
+/*======================================*/
+
+.contacts {
+  border: 3px solid skyblue;
+}
+
+.contacts__title {
+  border: 3px solid skyblue;
+}
+
+.contacts__social {
+  border: 3px solid skyblue;
+}
+
+.contacts__social-link {
+  border: 3px solid skyblue;
+}
+
+.footer__copyright {
+  border: 3px solid skyblue;
+}
+
+.footer__copyright--content-center {
+  border: 3px solid skyblue;
+}
