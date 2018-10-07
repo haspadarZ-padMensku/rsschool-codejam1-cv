@@ -103,7 +103,50 @@ a {
 }
 
 /*======================================*/
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.skills__title {
+  border: 3px solid skyblue;
+}
+
+.skills__description {
+  border: 3px solid skyblue;
+}
+
+.skills__table{
+  width: 50%;
+  border: 3px dashed skyblue;
+}
+
+.skills__table td {
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+.skills__table--align-right {
+  text-align: right;
+}
+
+.skills__table progress {
+  width: 70%;
+  height: 15px;
+  color: #3fb6b2;
+  background: #efefef;
+}
+
+.skills__table progress::-webkit-progress-bar {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.skills__table progress::-webkit-progress-value {
+  background: skyblue;
+}
 /*======================================*/
 
 /*======================================*/
