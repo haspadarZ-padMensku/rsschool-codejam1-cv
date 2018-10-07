@@ -108,6 +108,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border: 3px solid skyblue;
 }
 
 .skills__title {
@@ -120,12 +121,13 @@ a {
 
 .skills__table{
   width: 50%;
+  min-width: 300px;
   border: 3px dashed skyblue;
 }
 
 .skills__table td {
   border-collapse: collapse;
-  padding: 3px;
+  padding: 3px 5px;
 }
 
 .skills__table--align-right {
@@ -149,6 +151,21 @@ a {
 }
 /*======================================*/
 
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid skyblue;
+}
+
+.education__title {
+  border: 3px solid skyblue;
+}
+
+.education__description {
+  border: 3px solid skyblue;
+}
 /*======================================*/
 
 /*======================================*/
