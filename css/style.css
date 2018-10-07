@@ -3,12 +3,46 @@
 }
 
 body {
-  font-size: 18px;
+  font-family: 'Mukta', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  cursor: default;
+  padding: 3px;
+  border-radius: 3px;
+  color: #3985e9;
+}
+
+h2 {
+  padding: 3px;
+  border-radius: 3px;
+  color: #3985e9;
+}
+
+h2:hover {
+  cursor: default;
 }
 
 a {
+  padding: 10px;
   text-decoration: none;
   color: #000000;
+  border-radius: 3px;
+}
+
+a:hover {
+  background: rgba(135, 206, 235, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a:active {
+  background: rgb(135, 206, 235);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+progress:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .site-container {
@@ -21,16 +55,16 @@ a {
   max-width: 1024px;
   min-width: 300px;
   margin: 0 auto;
-  border: 3px solid seagreen;
   background: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .main {
   width: 100%;
   margin: 5px auto 5px;
-  border: 3px dotted red;
   background: #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .header,
@@ -41,24 +75,34 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  border: 3px dotted red;
   background: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header__person-name {
-  border: 3px solid skyblue;
+  margin: 5px auto;
 }
 
 .header__title {
-  border: 3px solid skyblue;
+  padding: 5px;
+}
+
+.header__title:hover {
+  cursor: default;
 }
 
 .nav {
-  border: 3px solid skyblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
 }
 
 .nav__link {
-  border: 3px solid skyblue;
+  margin: 5px auto;
 }
 
 /*=====================================*/
@@ -67,14 +111,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid skyblue;
   margin: 10px auto;
   background: #f1f1f1;
 }
 
 .about-me__title {
   margin: 5px auto;
-  border: 3px solid skyblue;
 }
 
 .about-me__wrapper {
@@ -82,28 +124,32 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  border: 3px solid skyblue;
+  width: 90%;
+  margin: 5px auto;
 }
 
 @media (max-width: 600px) {
   .about-me__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border: 3px solid skyblue;
   }
 }
 
 .about-me__person-photo {
   margin: 5px;
-  border: 3px solid skyblue;
+  padding: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-me__summary {
-  padding: 5px 5px 5px 20px;
-  border: 3px solid skyblue;
+  padding: 0px 5px 0px 20px;
+}
+
+.about-me__summary p:first-child {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /*======================================*/
@@ -112,26 +158,22 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 3px solid skyblue;
   margin: 10px auto;
   background: #f1f1f1;
 }
 
 .skills__title {
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .skills__description {
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .skills__table{
   margin: 5px auto;
   width: 50%;
   min-width: 300px;
-  border: 3px dashed skyblue;
 }
 
 .skills__table td {
@@ -152,7 +194,6 @@ a {
 
 .skills__table progress::-webkit-progress-bar {
   background: #ffffff;
-  border-radius: 5px;
 }
 
 .skills__table progress::-webkit-progress-value {
@@ -165,25 +206,22 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 3px solid skyblue;
   margin: 10px auto;
   background: #f1f1f1;
 }
 
 .education__title {
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .education__description {
+  width: 75%;
   margin: 5px auto;
-  border: 3px solid skyblue;
 }
 
 .education__education-list{
   margin: 5px auto 0;
   padding: 0;
-  border: 3px solid skyblue;
 }
 
 .education__education-list li{
@@ -204,24 +242,21 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 3px solid skyblue;
   margin: 10px auto;
   background: #f1f1f1;
 }
 
 .code-examples__title {
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .code-examples__description {
+  width: 75%;
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .code-examples a {
   margin: 5px auto;
-  border: 3px solid skyblue;
 }
 /*======================================*/
 
@@ -230,29 +265,30 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 3px solid skyblue;
   margin: 10px auto;
   background: #f1f1f1;
 }
 
 .english-level__title {
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .english-level h3 {
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .english-level__description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .english-level img {
   margin: 5px auto;
-  border: 3px solid skyblue;
+  border-radius: 5px;
 }
 
 /*======================================*/
@@ -262,27 +298,17 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 3px solid skyblue;
 }
 
 .contacts__title {
   margin: 5px auto 0;
-  border: 3px solid skyblue;
 }
 
 .contacts__social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 5px auto;
-  border: 3px solid skyblue;
-}
-
-.contacts__social-link {
-  border: 3px solid skyblue;
-}
-
-.footer__copyright {
-  border: 3px solid skyblue;
-}
-
-.footer__copyright--content-center {
-  border: 3px solid skyblue;
 }
