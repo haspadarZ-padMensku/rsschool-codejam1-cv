@@ -168,7 +168,35 @@ a {
 }
 /*======================================*/
 
+
+.code-examples {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid skyblue;
+}
+
+.code-examples__title {
+  border: 3px solid skyblue;
+}
 /*======================================*/
+
+.english-level {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid skyblue;
+}
+
+.english-level__title {
+  border: 3px solid skyblue;
+}
+
+.english-level__description {
+  border: 3px solid skyblue;
+}
 
 /*======================================*/
 
