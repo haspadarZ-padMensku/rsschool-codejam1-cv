@@ -22,14 +22,15 @@ a {
   min-width: 300px;
   margin: 0 auto;
   border: 3px solid seagreen;
-  background: #f1f1f1;
+  background: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main {
   width: 100%;
-  margin: 0 auto;
+  margin: 5px auto 5px;
   border: 3px dotted red;
+  background: #f1f1f1;
 }
 
 .header,
@@ -40,8 +41,8 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
   border: 3px dotted red;
+  background: #f1f1f1;
 }
 
 .header__person-name {
@@ -67,9 +68,12 @@ a {
   justify-content: center;
   align-items: center;
   border: 3px solid skyblue;
+  margin: 10px auto;
+  background: #f1f1f1;
 }
 
 .about-me__title {
+  margin: 5px auto;
   border: 3px solid skyblue;
 }
 
@@ -109,17 +113,22 @@ a {
   justify-content: space-around;
   align-items: center;
   border: 3px solid skyblue;
+  margin: 10px auto;
+  background: #f1f1f1;
 }
 
 .skills__title {
+  margin: 5px auto 0;
   border: 3px solid skyblue;
 }
 
 .skills__description {
+  margin: 5px auto 0;
   border: 3px solid skyblue;
 }
 
 .skills__table{
+  margin: 5px auto;
   width: 50%;
   min-width: 300px;
   border: 3px dashed skyblue;
@@ -157,14 +166,35 @@ a {
   justify-content: space-around;
   align-items: center;
   border: 3px solid skyblue;
+  margin: 10px auto;
+  background: #f1f1f1;
 }
 
 .education__title {
+  margin: 5px auto 0;
   border: 3px solid skyblue;
 }
 
 .education__description {
+  margin: 5px auto;
   border: 3px solid skyblue;
+}
+
+.education__education-list{
+  margin: 5px auto 0;
+  padding: 0;
+  border: 3px solid skyblue;
+}
+
+.education__education-list li{
+  list-style-type: none;
+  text-align: center;
+}
+
+.education__education-list li:first-child{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 /*======================================*/
 
@@ -175,9 +205,22 @@ a {
   justify-content: space-around;
   align-items: center;
   border: 3px solid skyblue;
+  margin: 10px auto;
+  background: #f1f1f1;
 }
 
 .code-examples__title {
+  margin: 5px auto 0;
+  border: 3px solid skyblue;
+}
+
+.code-examples__description {
+  margin: 5px auto 0;
+  border: 3px solid skyblue;
+}
+
+.code-examples a {
+  margin: 5px auto;
   border: 3px solid skyblue;
 }
 /*======================================*/
@@ -188,27 +231,47 @@ a {
   justify-content: space-around;
   align-items: center;
   border: 3px solid skyblue;
+  margin: 10px auto;
+  background: #f1f1f1;
 }
 
 .english-level__title {
+  margin: 5px auto 0;
+  border: 3px solid skyblue;
+}
+
+.english-level h3 {
+  margin: 5px auto 0;
   border: 3px solid skyblue;
 }
 
 .english-level__description {
+  margin: 5px auto 0;
+  border: 3px solid skyblue;
+}
+
+.english-level img {
+  margin: 5px auto;
   border: 3px solid skyblue;
 }
 
 /*======================================*/
 
 .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   border: 3px solid skyblue;
 }
 
 .contacts__title {
+  margin: 5px auto 0;
   border: 3px solid skyblue;
 }
 
 .contacts__social {
+  margin: 5px auto;
   border: 3px solid skyblue;
 }
 
