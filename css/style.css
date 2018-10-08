@@ -85,7 +85,10 @@ progress:hover {
 }
 
 .header__title {
-  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0 auto;
 }
 
 .header__title:hover {
@@ -102,7 +105,7 @@ progress:hover {
 }
 
 .nav__link {
-  margin: 5px auto;
+  margin: 0 auto;
 }
 
 .about-me {
@@ -110,7 +113,7 @@ progress:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  margin: 0 auto;
   background: #f1f1f1;
 }
 
@@ -121,10 +124,10 @@ progress:hover {
 .about-me__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   width: 90%;
-  margin: 5px auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -143,7 +146,8 @@ progress:hover {
 }
 
 .about-me__summary {
-  padding: 0px 5px 0px 20px;
+  padding: 0px 5px;
+  margin: 5px 5px 0;
 }
 
 .about-me__summary p:first-child {
@@ -151,12 +155,17 @@ progress:hover {
   margin-top: 0;
 }
 
+.about-me__summary p:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 10px auto;
+  margin: 0 auto;
   background: #f1f1f1;
 }
 
@@ -165,13 +174,18 @@ progress:hover {
 }
 
 .skills__description {
-  margin: 5px auto 0;
+  padding: 0px 5px;
+  margin: 5px 20px 0;
 }
 
 .skills__table{
-  margin: 5px auto;
+  margin: 0 auto;
   width: 50%;
   min-width: 300px;
+}
+
+.skills__table tr:last-child td {
+  padding-bottom: 0;
 }
 
 .skills__table td {
@@ -203,21 +217,21 @@ progress:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 10px auto;
+  margin: 0 auto;
   background: #f1f1f1;
 }
 
 .education__title {
-  margin: 5px auto 0;
+  margin: 0 auto ;
 }
 
 .education__description {
-  width: 75%;
-  margin: 5px auto;
+  padding: 0px 5px;
+  margin: 5px 20px 0;
 }
 
 .education__education-list{
-  margin: 5px auto 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -237,21 +251,21 @@ progress:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 10px auto;
+  margin: 0 auto;
   background: #f1f1f1;
 }
 
 .code-examples__title {
-  margin: 5px auto 0;
+  margin: 0 auto;
 }
 
 .code-examples__description {
-  width: 75%;
-  margin: 5px auto 0;
+  padding: 0px 5px;
+  margin: 0 20px;
 }
 
 .code-examples a {
-  margin: 5px auto;
+  margin: 0 auto;
 }
 
 .english-level {
@@ -259,12 +273,13 @@ progress:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 10px auto;
+  margin: 0 auto;
   background: #f1f1f1;
 }
 
 .english-level__title {
-  margin: 5px auto 0;
+  padding-top: 0;
+  margin: 0 auto;
 }
 
 .english-level h3 {
@@ -281,7 +296,7 @@ progress:hover {
 }
 
 .english-level img {
-  margin: 5px auto;
+  margin: 5px auto 25px;
   border-radius: 5px;
 }
 
@@ -294,6 +309,7 @@ progress:hover {
 
 .contacts__title {
   margin: 5px auto 0;
+  padding: 5px;
 }
 
 .contacts__social {
@@ -303,4 +319,16 @@ progress:hover {
   justify-content: center;
   align-items: center;
   margin: 5px auto;
+}
+
+.footer__copyright--content-center {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 5px 5px;
+  margin: 5px 20px;
+  font-size: 0.75em;
+}
+
+.footer__copyright--nowrap {
+  white-space: nowrap;
 }
