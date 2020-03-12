@@ -85,7 +85,11 @@ progress:hover {
 }
 
 .header__title {
-  padding: 5px;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 3px;
+  color: #3985e9;
+  font-size: 36px;
 }
 
 .header__title:hover {
@@ -211,11 +215,6 @@ progress:hover {
   margin: 5px auto 0;
 }
 
-.education__description {
-  width: 75%;
-  margin: 5px auto;
-}
-
 .education__education-list{
   margin: 5px auto 0;
   padding: 0;
@@ -226,10 +225,8 @@ progress:hover {
   text-align: center;
 }
 
-.education__education-list li:first-child{
-  font-size: 20px;
+.bold {
   font-weight: bold;
-  text-align: center;
 }
 
 .code-examples {
@@ -303,4 +300,38 @@ progress:hover {
   justify-content: center;
   align-items: center;
   margin: 5px auto;
+}
+
+.work-examples {
+  padding: 0 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-examples > .work-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-examples > .work-item > .name {
+  margin-top: 15px;
+  color: #3985e9;
+  font-size: 30px;
+}
+
+.work-examples > .work-item > .image {
+  margin-top: 10px;
+  color: red;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.work-examples > .work-item > .image > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
