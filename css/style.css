@@ -147,7 +147,8 @@ progress:hover {
 }
 
 .about-me__summary {
-  padding: 0px 5px 0px 20px;
+  padding: 0px 5px;
+  margin: 5px 5px 0;
 }
 
 .about-me__summary p:first-child {
@@ -169,7 +170,7 @@ progress:hover {
 }
 
 .skills__description {
-  margin: 5px auto 0;
+  margin: 5px 30px;
 }
 
 .skills__table{
@@ -216,7 +217,7 @@ progress:hover {
 }
 
 .education__education-list{
-  margin: 5px auto 0;
+  margin: 5px 30px;
   padding: 0;
 }
 
@@ -334,4 +335,16 @@ progress:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.footer__copyright--content-center {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 5px 5px;
+  margin: 5px 20px;
+  font-size: 0.75em;
+}
+
+.footer__copyright--nowrap {
+  white-space: nowrap;
 }
