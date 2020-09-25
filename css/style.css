@@ -7,6 +7,13 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
 h1 {
   cursor: default;
   padding: 3px;
@@ -18,6 +25,7 @@ h2 {
   padding: 3px;
   border-radius: 3px;
   color: #3985e9;
+  margin: 10px auto;
 }
 
 h2:hover {
@@ -78,6 +86,12 @@ progress:hover {
   background: #f1f1f1;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 15px;
+  }
 }
 
 .header__person-name {
@@ -288,6 +302,7 @@ progress:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 10px;
 }
 
 .contacts__title {
@@ -311,6 +326,12 @@ progress:hover {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .work-examples {
+    padding: 0 16px 30px 16px;
+  }
+}
+
 .work-examples > .work-item {
   display: flex;
   flex-direction: column;
@@ -324,16 +345,21 @@ progress:hover {
   font-size: 30px;
 }
 
+@media (max-width: 600px) {
+  .work-examples > .work-item > .name {
+    font-size: 20px;
+  }
+}
+
 .work-examples > .work-item > .image {
   margin-top: 10px;
   color: red;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
 .work-examples > .work-item > .image > img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   border-radius: 10px;
 }
 
